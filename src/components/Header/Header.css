@@ -1,27 +1,122 @@
-.header{
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.13);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes bobbing {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(360deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+  @keyframes scale-up {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes slide-in {
+    0% {
+      transform: translateX(-10px);
+    }
+    50% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-10px);
+    }
+  }
+  
+  @keyframes swing {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(10deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+  .header {
     display: flex;
     justify-content: space-between;
-
-}
-
-.logo{
-    width: 10rem;
-    height: 3rem;
-}
-
-.header-menu{
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+  
+  .logo {
+    width: 12rem;
+    height: auto;
+    animation: pulse 2s ease-in-out infinite;
+  }
+  
+  .header-menu {
     display: flex;
     list-style: none;
     gap: 2rem;
-    color:white;
-}
-
-.header-menu li{
+    color: white;
+    align-items: center;
+  }
+  
+  .header-menu li {
     cursor: pointer;
-}
-
-
-.header-menu li:hover{
-    cursor: pointer;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  /* Individual hover animations */
+  .header-menu li:nth-child(1):hover {
+    animation: bobbing 0.5s ease-in-out;
     color: var(--orange);
-}
+  }
+  
+  .header-menu li:nth-child(2):hover {
+    animation: rotate 0.5s ease-in-out;
+    color: var(--orange);
+  }
+  
+  .header-menu li:nth-child(3):hover {
+    animation: scale-up 0.5s ease-in-out;
+    color: var(--orange);
+  }
+  
+  .header-menu li:nth-child(4):hover {
+    animation: slide-in 0.5s ease-in-out;
+    color: var(--orange);
+  }
+  
+  .header-menu li:nth-child(5):hover {
+    animation: swing 0.5s ease-in-out;
+    color: var(--orange);
+  }
+  
