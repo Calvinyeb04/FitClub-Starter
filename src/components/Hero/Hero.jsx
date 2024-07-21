@@ -55,6 +55,8 @@ const Hero = () => {
     <div className='hero-buttons'>
         <button className='btn'>Get Started</button>
         <button className='btn'>Learn More</button>
+
+        
     </div>
 </div>
     </div>
@@ -68,7 +70,8 @@ const Hero = () => {
         {/* hero images*/}
         <img src={hero_image} alt="" className='hero-image' />
         <img src={hero_image_back} alt="" className='hero-image-back' />
-        {/* Calories*/}
+        
+        {/* Calories
         <div className="calories">
             <img src={Calories} alt="" />
             
@@ -77,6 +80,8 @@ const Hero = () => {
             <span>220 kcal</span>
             </div>
         </div>
+        */}
+
       </div>
 </div>
   );
