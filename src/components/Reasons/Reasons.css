@@ -3,6 +3,8 @@
     padding: 2rem;
     display: flex;
     gap: 2rem;
+    background-color: var(--darkGrey);
+
 }
 
 /* Left side with images */
