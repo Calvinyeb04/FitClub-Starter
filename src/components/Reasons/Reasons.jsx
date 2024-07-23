@@ -22,19 +22,19 @@ const Reasons = () => {
                 <div className="details-r">
                     <div>
                         <img src={tick} alt="Tick" />
-                        <span>OVER 140+ EXPERT COACHES</span>
+                        <span>Over 140 Expert Coaches: Benefit from the guidance of experienced fitness professionals.</span>
                     </div>
                     <div>
                         <img src={tick} alt="Tick" />
-                        <span>TRAIN SMARTER AND FASTER THAN BEFORE</span>
+                        <span>Train Smarter and Faster: Achieve your goals more efficiently with our advanced training techniques.</span>
                     </div>
                     <div>
                         <img src={tick} alt="Tick" />
-                        <span>FREE PROGRAM FOR NEW MEMBERS</span>
+                        <span>Free Program for New Members: Start your journey with complimentary access to our introductory program.</span>
                     </div>
                     <div>
                         <img src={tick} alt="Tick" />
-                        <span>RELIABLE PARTNERS</span>
+                        <span>Reliable Partners: Trust in our commitment to support and collaborate with you every step of the way.</span>
                     </div>
                 </div>
             </div>

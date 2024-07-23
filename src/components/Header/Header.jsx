@@ -1,20 +1,18 @@
-import React from "react";
-import "./Header.css";
-import AstroWorldLogo from "../../assets/AstroWorld-Logo.png"; // Corrected import statement
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './Header.css';
+import Logo from '../../assets/AstroWorld-Logo.png';
 
 const Header = () => {
   return (
     <div className="header">
-      <img src={AstroWorldLogo} alt="AstroWorld Logo" className="logo" />
+      <img src={Logo} alt="Logo" className="logo" />
       <ul className="header-menu">
-        <li>Home</li>
-        <li>Programs</li>
-        <li>Why Us</li>
-        <li>Plans</li>
-        <li>Testimonials</li>
+        <li><Link to="/">Gym</Link></li>
+        <li><Link to="/health-wellness">Health & Wellness</Link></li>
       </ul>
     </div>
   );
-}
+};
 
 export default Header;

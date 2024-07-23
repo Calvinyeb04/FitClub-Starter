@@ -4,7 +4,6 @@
     display: flex;
     gap: 2rem;
     background-color: var(--darkGrey);
-
 }
 
 /* Left side with images */
@@ -52,6 +51,7 @@
     box-shadow: red 0px 0px 10px 0px;
     border-radius: 10px;
     animation: pulse 3s infinite; /* Pulsating animation */
+    text-align: center; /* Center-align text */
 }
 
 /* Title animations */
@@ -87,11 +87,13 @@
     gap: 1rem;
 }
 
+/* Center-align text in details section */
 .details-r > div {
     display: flex;
     align-items: center;
     gap: 0.75rem;
     animation: bounce 2s infinite; /* Bounce animation */
+    text-align: center; /* Center-align text */
 }
 
 /* Tick icon */
@@ -102,7 +104,7 @@
 
 /* Text in details section */
 .details-r span {
-    font-size:2rem;
+    font-size: 2rem;
     color: white;
     font-style: italic;
 }
@@ -146,9 +148,14 @@
 
 @keyframes bounce {
     20%, 100% {
-        transform: translateY(2);
+        transform: translateY(2px);
     }
     70% {
         transform: translateY(10px);
     }
 }
+
+.stroke-text, .stroke-text2 {
+    position: relative; /* or absolute/fixed depending on your layout */
+    top: -40px; /* Adjust the value as needed */
+  }

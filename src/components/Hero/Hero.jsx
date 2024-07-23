@@ -1,23 +1,18 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // Import Link for navigation
+import { Link } from 'react-router-dom';
 import './Hero.css';
-import Header from '../Header/Header';
 import hero_image from '../../assets/hero_image.png';
 import hero_image_back from '../../assets/hero_image_back.png';
 import heart from '../../assets/heart.png';
-// Assuming Calories image is commented out or not used currently
 
 const Hero = () => {
   return (
     <div className='hero'>
       <div className='left-h'>
-        <Header />
-        {/* the best ad */}
         <div className="the-best-ad">
             <div></div>
             <span>the best fitness club in the town</span>
         </div>
-        {/* Hero heading */}
         <div className='hero-text'>
             <div>
                 <span className='stroke-text'>Shape </span>
@@ -32,7 +27,6 @@ const Hero = () => {
                 </span>
             </div>
 
-            {/* Figures */}
             <div className="figures">
                 <div>
                     <span>+140</span>
@@ -48,13 +42,12 @@ const Hero = () => {
                 </div>
             </div>
 
-            {/* Hero Buttons */}
             <div className='hero-buttons'>
                 <Link to="/get-started" className='btn'>
-                Get Started <i className="fas fa-arrow-right"></i>
-                     </Link>
-             <button className='btn'>Learn More</button>
-</div>
+                    Get Started <i className="fas fa-arrow-right"></i>
+                </Link>
+                <button className='btn'>Learn More</button>
+            </div>
         </div>
       </div>
       <div className='right-h'>
@@ -64,11 +57,8 @@ const Hero = () => {
             <img src={heart} alt="" />
             <span>Heart Rate</span><span>116 bpm</span>
         </div>
-        {/* hero images */}
         <img src={hero_image} alt="" className='hero-image' />
         <img src={hero_image_back} alt="" className='hero-image-back' />
-        
-        {/* Calories section is commented out */}
       </div>
     </div>
   );
