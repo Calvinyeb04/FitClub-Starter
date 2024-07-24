@@ -15,7 +15,7 @@ const Nutrition = () => {
             <div className="logo">Astro's kitchen</div>
             <ul>
               <li><Link to="/Nutrition">Home</Link></li>
-              <li><Link to="/Menu">Menu</Link></li>
+              <li><Link to="/Menu">Recipes</Link></li>
               <li><Link to="/Classes">Classes</Link></li>
               <li><Link to="/Location">Location</Link></li>
               <li><Link to="/Blog">Blog</Link></li>
