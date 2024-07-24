@@ -1,8 +1,6 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import './GetStarted.css';
-import LoginBackground from '../../assets/healthWellnesspics/loginbackground.avif'
-import SignUpBackground from '../../assets/healthWellnesspics/Createaccountpage.avif';
+
 
 const GetStarted = () => {
     const [isLogin, setIsLogin] = useState(true);
