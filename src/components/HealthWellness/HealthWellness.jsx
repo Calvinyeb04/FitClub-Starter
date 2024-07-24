@@ -21,7 +21,7 @@ const HealthWellness = () => {
           </ul>
         </div>
         <div className="content">
-          <h1>Nurture Your Mind, Body, and Soul</h1>
+          <h1 className="HEADER_MAIN">Nurture Your Mind, Body, and Soul</h1>
           <div className="content-text">
             <p className="p1">
               Welcome to our haven of wellness, where we are dedicated to helping you
