@@ -10,6 +10,12 @@ const Header = () => {
       <ul className="header-menu">
         <li><Link to="/">Gym</Link></li>
         <li><Link to="/health-wellness">Health & Wellness</Link></li>
+        <li><Link to="/workout-plan">Workout-Plan</Link></li>
+        <li><Link to="/nutrition">Nutrition</Link></li> {/* Corrected path */}
+        <li><Link to="/get-started">Login/Create</Link></li> {/* Corrected path */}
+
+
+        
       </ul>
     </div>
   );
